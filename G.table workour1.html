@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table activity</title>
+    <link>
+    <script></script>
+    <style>
+        caption{
+            font-family: Arial, Helvetica, sans-serif; font-size: x-large; background-color: aqua;
+        }
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            width: 80%;
+        }
+        th, tr, td {
+            border: 1px solid black;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif; font-size: xx-large;
+            padding: 10px;
+            color: brown;
+        }
+        .unit1 table{
+            border: 1px solid rgb(31, 9, 231);
+            border-collapse: collapse;
+            width: 60%;
+            padding: 60px;
+            
+        }
+        .unit1 caption{
+            color: black;
+            background-color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif; font-size: x-large;
+            
+        }
+        .unit1 thead,th {
+            color: black;
+            background-color: rgb(238, 222, 192);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+        }
+        .unit1 tbody td{
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(241, 6, 6);
+
+        }
+
+    </style>
+</head>
+<body>
+    <!--Basic Table formation-->
+    <table>
+        <caption> Table1 by useing "td" only</caption>
+        <tbody>
+            <tr>
+                <td>Rice</td>
+                <td>Oil</td>
+                <td>Veg</td>
+            </tr>
+            <tr>
+                <td>2kg</td>
+                <td>5li</td>
+                <td>3kg</td>
+            </tr>
+        </tbody>
+    </table>
+        <Br><br>
+    <table class="unit1">
+        <caption class="unit1">Table 2 by useing "th,tr,td</caption>
+        <thead class="unit1">
+          <tr>
+            <th>ROLL NO</th>
+            <th>NAME</th>
+            <th>TOTAL</th>
+            <th>RESULT</th>
+          </tr>
+          </thead>
+          <tbody class="unit1">
+            <tr>
+                <td>112</td>
+                <td>Akash</td>
+                <td>400</td>
+                <td>pass</td>
+            </tr>
+            <tr>
+                <td>113</td>
+                <td>Akshaya</td>
+                <td>250</td>
+                <td>fail</td>
+            </tr>
+            <tr>
+                <td>114</td>
+                <td>Anu</td>
+                <td>450</td>
+                <td>pass</td>
+
+            </tr>
+          </tbody>
+        
+        <!--Table border divider-->
+    </table>
+    <br><br>
+    <h1 style="text-align: center;background-color: aquamarine;">Table 3 by using style in internal</h1>
+    <table style="width: 50%; padding:10px; font-family: 'Times New Roman', Times, serif;text-align: left; background-color: rgb(7, 241, 163);" >
+        
+        <tr>
+            <th>Summer</th>
+            <th>Winter</th>
+            <th>Spring</th>
+            <th>Fall</th>
+            <th>Monsoon</th>
+        
+        </tr>
+        
+        <tr>
+            <td>May</td>
+            <td>December</td>
+            <td>October</td>
+            <td>March</td>
+            <td>July</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>December</td>
+            <td>October</td>
+            <td>March</td>
+            <td>July</td>
+        </tr>
+
+    </table>
+    <br><br>
+    <!--Table width-->
+    <table style="width: 100%;">
+        <caption style="background-color: blue;font-family: 'Times New Roman', Times, serif;font-size: x-large;">Table4 about useing width</caption>
+    <tr>
+        <th style="width: 60%;"> bill no</th>
+        <th>Client name</th>
+        <th>Total bill amount</th>
+    </tr>
+    <tr>
+        <td>312110333</td>
+        <td>Rina</td>
+        <td>5000</td>
+
+    </tr>
+    <tr>
+        <td>312110334</td>
+        <td>Rithik</td>
+        <td>10000</td>
+
+    </tr>
+    <tr>
+        <td>312110335</td>
+        <td>Dhanush</td>
+        <td>7000</td>
+    </tr>
+    </table>
+    <br><br>
+    <!--Table height-->
+    <table style="width: 100%S;">
+        <caption style="background-color: aquamarine;font-family: 'Times New Roman', Times, serif;font-size: xx-large;">Table5 about useing height</caption>
+     <tr>
+        <th style="height:45vh;"> bill no</th>
+        <th>Client name</th>
+        <th>Total bill amount</th>
+    </tr>
+    <tr>
+        <td>312110333</td>
+        <td>Rina</td>
+        <td>5000</td>
+
+    </tr>
+    <tr>
+        <td>312110334</td>
+        <td>Rithik</td>
+        <td>10000</td>
+
+    </tr>
+    <tr>
+        <td>312110335</td>
+        <td>Dhanush</td>
+        <td>7000</td>
+    </table>
+    <br><br>
+    <!--Table vertical heading-->
+    <table style="background-color: palevioletred;">
+        <caption style="width: 100%;font-family: 'Times New Roman', Times, serif;background-color: aquamarine; font-size: xx-large;">Table5 vertical heading</caption>
+    <tr>
+        <th>S.no</th>
+        <td>112</td>
+        <td>114</td>
+    </tr>
+    <tr>
+    <th>Item</th>
+    <td>Cotton</td>
+    <td>Silk</td>
+    </tr>
+    <tr>
+    <th>Rate</th>
+    <td>450</td>
+    <td>400</td>
+</table>
+    <br> <br>
+    <!--Table6 padding spacing-->
+    <table style="border-spacing: 15px; border-collapse:separate; padding:20px ;">
+        <caption style="width: 100%;background-color: blue; font-size: xx-large;">Table6 padding spacingh</caption>
+    
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Kaviya</td>
+            <td>23</td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
